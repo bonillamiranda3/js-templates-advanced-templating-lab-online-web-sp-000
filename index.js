@@ -2,7 +2,7 @@ function init() {
   //put any page initialization/handlebars initialization here
   const formTemplate = Handlebars.compile(document.getElementById("recipe-form-template").innerHTML);
   document.getElementsByTagName("main")[0].innerHTML += formTemplate();
-  
+
   var formTemplate = document.getElementById("recipe-form-template").innerHTML;
 
 
@@ -130,10 +130,8 @@ function displayEditForm() {
   const recipeFormTemplate = document.getElementById("recipe-form-template").innerHTML;
   const recipeFormTemplateFn = Handlebars.compile(recipeFormTemplate);
   document.getElementById('main').innerHTML = recipeFormTemplateFn(recipe);
-}  
+}
 }
 document.addEventListener("DOMContentLoaded", function(event) {
   init();
 });
-
-
